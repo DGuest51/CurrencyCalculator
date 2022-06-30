@@ -643,23 +643,23 @@ namespace FinalProject
                     while (!isCurrency)
                     {
                         Console.WriteLine("Enter three-letter currency code you want to convert FROM: ");
-                        currencyFrom = Console.ReadLine();
+                        currencyFrom = Console.ReadLine().ToUpper();
 
                         Console.WriteLine();
 
                         Console.WriteLine("Enter three-letter currency code you want to convert TO: ");
-                        currencyTo = Console.ReadLine();
+                        currencyTo = Console.ReadLine().ToUpper();
 
                         if (!CurrencyList.ContainsValue(currencyFrom) || !CurrencyList.ContainsValue(currencyTo))
                         {
                             Console.WriteLine();
-                            Console.WriteLine("Please enter a currency code listed above and in ALL-CAPS!");
+                            Console.WriteLine("PLEASE ENTER A CURRENCY CODE FROM THE LIST!");
                             Console.WriteLine();
                         }
                         else if (currencyFrom == currencyTo)
                         {
                             Console.WriteLine();
-                            Console.WriteLine("Cannot convert to self. Try again, genius.");
+                            Console.WriteLine("CANNOT CONVERT TO SELF, GENIUS. TRY AGAIN.");
                             Console.WriteLine();
                         }
                         else
@@ -674,7 +674,7 @@ namespace FinalProject
                                 if (!double.TryParse(currencyAmount, out double value))
                                 {
                                     Console.WriteLine();
-                                    Console.WriteLine("Enter a number, Pinhead.");
+                                    Console.WriteLine("ENTER A NUMBER, PINHEAD!");
                                 }
                                 else
                                 {
@@ -689,6 +689,7 @@ namespace FinalProject
                     }
                     Console.WriteLine();
                     Console.Write("Press 'q' and Enter to close the app, or press any other key and Enter to continue: ");
+                    Console.WriteLine();
                     if (Console.ReadLine() == "q") endApp = true;
 
                 }
