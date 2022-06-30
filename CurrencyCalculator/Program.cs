@@ -599,7 +599,6 @@ namespace FinalProject
         public class Program
         {
             //internal static string currencyFrom;
-
             static void Main(string[] args)
             {
                 Console.WriteLine("C# CURRENCY CALCULATOR");
@@ -643,6 +642,7 @@ namespace FinalProject
 
                     while (!isCurrency)
                     {
+                        Console.WriteLine();
                         Console.WriteLine("Enter three-letter currency code you want to convert FROM: ");
                         currencyFrom = Console.ReadLine().ToUpper();
 
@@ -653,6 +653,14 @@ namespace FinalProject
 
                         if (!CurrencyList.ContainsValue(currencyFrom) || !CurrencyList.ContainsValue(currencyTo))
                         {
+                            Console.Clear();
+                            Console.WriteLine("AVAILABLE CURRENCIES:");
+                            Console.WriteLine();
+
+                            foreach (var currency in CurrencyList)
+                            {
+                                Console.WriteLine($"\t{currency.Key}: {currency.Value}");
+                            }
                             Console.WriteLine();
                             Console.WriteLine("PLEASE ENTER A CURRENCY CODE FROM THE LIST!");
                             Console.WriteLine();
@@ -671,18 +679,18 @@ namespace FinalProject
                                 Console.WriteLine();
                                 Console.WriteLine("Enter numerical amount you want to convert: ");
                                 currencyAmount = Console.ReadLine();
-                                
-                                if (!double.TryParse(currencyAmount, out double value))
+
+                                if (!double.TryParse(currencyAmount, out double value1) || Double.Parse(currencyAmount) < 0)
                                 {
                                     Console.WriteLine();
-                                    Console.WriteLine("ENTER A NUMBER, PINHEAD!");
+                                    Console.WriteLine("ENTER A POSITIVE NUMBER, PINHEAD!");
                                 }
                                 else
                                 {
                                     isNumerical = true;
                                     Console.WriteLine();
-                                    Console.WriteLine($"{currencyAmount} {currencyFrom} is approximately: " 
-                                    + ConvertCurrency(currencyFrom, currencyTo, 
+                                    Console.WriteLine($"{currencyAmount} {currencyFrom} is approximately: "
+                                    + ConvertCurrency(currencyFrom, currencyTo,
                                     Convert.ToDouble(currencyAmount)) + $" {currencyTo}");
                                 }
                             }
@@ -693,7 +701,24 @@ namespace FinalProject
                     Console.WriteLine();
                     Console.Write("Press 'q' and Enter to close the app, or press any other key and Enter to continue: ");
                     Console.WriteLine();
-                    if (Console.ReadLine() == "q") endApp = true;
+                    if (Console.ReadLine() == "q")
+                    {
+                        endApp = true;
+                        Console.Clear();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("AVAILABLE CURRENCIES:");
+                        Console.WriteLine();
+
+                        foreach (var currency in CurrencyList)
+                        {
+                            Console.WriteLine($"\t{currency.Key}: {currency.Value}");
+                        }
+                        Console.WriteLine();
+                    }
+
                 }
                 return;
             }
