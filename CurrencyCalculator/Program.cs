@@ -25,6 +25,30 @@ namespace FinalProject
                     case "JPY":
                         result = currencyAmount * 135.87;
                         break;
+                    case "AUD":
+                        result = currencyAmount * 1.45;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 1.28;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.95;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 10.18;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 52.62;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 7.84;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 78.73;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 35.1;
+                        break;
                     default:
                         break;
                 }
@@ -45,6 +69,30 @@ namespace FinalProject
                         break;
                     case "JPY":
                         result = currencyAmount * 143.4;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 1.52;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 1.35;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 1;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 10.68;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 55.19;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 8.23;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 82.58;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 36.82;
                         break;
                     default:
                         break;
@@ -67,6 +115,30 @@ namespace FinalProject
                     case "JPY":
                         result = currencyAmount * 166.2;
                         break;
+                    case "AUD":
+                        result = currencyAmount * 1.76;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 1.56;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 1.16;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 12.38;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 63.98;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 9.54;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 95.73;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 42.68;
+                        break;
                     default:
                         break;
                 }
@@ -87,6 +159,30 @@ namespace FinalProject
                         break;
                     case "JPY":
                         result = currencyAmount * 20.27;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 0.21;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.19;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.14;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 1.51;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 7.85;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 1.17;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 11.74;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 5.23;
                         break;
                     default:
                         break;
@@ -109,6 +205,390 @@ namespace FinalProject
                     case "USD":
                         result = currencyAmount * 0.007;
                         break;
+                    case "AUD":
+                        result = currencyAmount * 0.01;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.009;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.007;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 0.074;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 0.38;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 0.057;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 0.577;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 0.25;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "AUD")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.65;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.56;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.68;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 4.61;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 93.92;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.88;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.65;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 7.01;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 36.24;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 5.4;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 54.22;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 24.18;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "CAD")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.74;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.63;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.77;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 5.20;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 105.89;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 1.12;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.74;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 7.9;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 40.86;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 6.09;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 61.14;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 27.26;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "CHF")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.99;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.86;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 1.04;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 7.01;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 142.83;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 1.34;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 1.52;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 10.66;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 55.11;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 8.21;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 82.46;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 36.77;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "SEK")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.09;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.08;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.09;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 0.65;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 13.38;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.12;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.09;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 0.14;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 5.16;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 0.76;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 7.72;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 3.44;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "RUB")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.018;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.015;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.018;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 0.12;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 2.58;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.024;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.018;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 0.19;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 0.02;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 0.14;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 1.49;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 0.666;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "HKD")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.12;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.10;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.127;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 0.85;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 17.37;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.164;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.12;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 1.29;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 6.7;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 0.18;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 10.03;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 4.47;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "INR")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.01;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.01;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.01;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 0.08;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 1.72;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.016;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.01;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 0.12;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 0.66;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 0.099;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 0.018;
+                        break;
+                    case "THB":
+                        result = currencyAmount * 0.44;
+                        break;
+                    default:
+                        break;
+                }
+                return result;
+            }
+            else if (currencyFrom == "THB")
+            {
+                switch (currencyTo)
+                {
+                    case "EUR":
+                        result = currencyAmount * 0.02;
+                        break;
+                    case "GBP":
+                        result = currencyAmount * 0.02;
+                        break;
+                    case "USD":
+                        result = currencyAmount * 0.02;
+                        break;
+                    case "CNY":
+                        result = currencyAmount * 0.19;
+                        break;
+                    case "JPY":
+                        result = currencyAmount * 3.87;
+                        break;
+                    case "CAD":
+                        result = currencyAmount * 0.03;
+                        break;
+                    case "CHF":
+                        result = currencyAmount * 0.02;
+                        break;
+                    case "SEK":
+                        result = currencyAmount * 0.28;
+                        break;
+                    case "RUB":
+                        result = currencyAmount * 1.49;
+                        break;
+                    case "HKD":
+                        result = currencyAmount * 0.22;
+                        break;
+                    case "INR":
+                        result = currencyAmount * 2.23;
+                        break;
+                    case "AUD":
+                        result = currencyAmount * 0.04;
+                        break;
                     default:
                         break;
                 }
@@ -130,10 +610,18 @@ namespace FinalProject
                 var CurrencyList = new Dictionary<string, string>()
         {
             {"United States Dollar", "USD"},
-            {"The EURO", "EUR"},
+            {"EURO", "EUR"},
             {"British Pound Sterling", "GBP"},
-            {"Chinese Yuan", "CNY"},
+                    {"Australian Dollars", "AUD" },
+                    {"Canadian Dollars", "CAD" },
+                    {"Swiss Francs", "CHF"},
+                    {"Swedish Kronor", "SEK" },
+                    {"Russian Rubles", "RUB" },
+            {"Chinese Yuan Renminbi", "CNY"},
+                    {"Hong Kong Dollar", "HKD" },
             {"Japanese Yen", "JPY"},
+                    {"Indian Rupees", "INR" },
+                    {"Thai Baht", "THB" }
         };
 
                 foreach (var currency in CurrencyList)
@@ -141,7 +629,7 @@ namespace FinalProject
                     Console.WriteLine($"\t{currency.Key}: {currency.Value}");
                 }
                 Console.WriteLine();
-                
+
                 bool endApp = false;
 
                 while (!endApp)
@@ -151,7 +639,7 @@ namespace FinalProject
                     string currencyAmount;
                     bool isCurrency = false;
                     bool isNumerical = false;
-                   
+
                     while (!isCurrency)
                     {
                         Console.WriteLine("Enter three-letter currency code you want to convert FROM: ");
@@ -166,6 +654,12 @@ namespace FinalProject
                         {
                             Console.WriteLine();
                             Console.WriteLine("Please enter a currency code listed above and in ALL-CAPS!");
+                            Console.WriteLine();
+                        }
+                        else if (currencyFrom == currencyTo)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Cannot convert to self. Try again, genius.");
                             Console.WriteLine();
                         }
                         else
