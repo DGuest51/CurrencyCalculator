@@ -7,7 +7,7 @@ namespace FinalProject
     public class CurrencyCalculator
     {
         public static double ConvertCurrency(string currencyFrom, string currencyTo, double currencyAmount)
-        {
+        {   //method to calculate currency conversion
             double result = 0;
             if (currencyFrom == "USD")
             {
@@ -604,6 +604,7 @@ namespace FinalProject
             {
                 Console.WriteLine("C# CURRENCY CALCULATOR");
                 Console.WriteLine("----------------------");
+                Console.WriteLine("Forex rates as of 6/29/22");
                 Console.WriteLine();
                 Console.WriteLine("AVAILABLE CURRENCIES:");
                 Console.WriteLine();
@@ -612,16 +613,16 @@ namespace FinalProject
             {"United States Dollar", "USD"},
             {"EURO", "EUR"},
             {"British Pound Sterling", "GBP"},
-                    {"Australian Dollars", "AUD" },
-                    {"Canadian Dollars", "CAD" },
-                    {"Swiss Francs", "CHF"},
-                    {"Swedish Kronor", "SEK" },
-                    {"Russian Rubles", "RUB" },
+            {"Australian Dollars", "AUD"},
+            {"Canadian Dollars", "CAD"},
+            {"Swiss Francs", "CHF"},
+            {"Swedish Kronor", "SEK"},
+            {"Russian Rubles", "RUB"},
             {"Chinese Yuan Renminbi", "CNY"},
-                    {"Hong Kong Dollar", "HKD" },
+            {"Hong Kong Dollar", "HKD"},
             {"Japanese Yen", "JPY"},
-                    {"Indian Rupees", "INR" },
-                    {"Thai Baht", "THB" }
+            {"Indian Rupees", "INR"},
+            {"Thai Baht", "THB"}
         };
 
                 foreach (var currency in CurrencyList)
@@ -670,7 +671,7 @@ namespace FinalProject
                                 Console.WriteLine();
                                 Console.WriteLine("Enter numerical amount you want to convert: ");
                                 currencyAmount = Console.ReadLine();
-                                //double currencyAmountTemp = Convert.ToDouble(Console.ReadLine());
+                                
                                 if (!double.TryParse(currencyAmount, out double value))
                                 {
                                     Console.WriteLine();
@@ -680,7 +681,9 @@ namespace FinalProject
                                 {
                                     isNumerical = true;
                                     Console.WriteLine();
-                                    Console.WriteLine("Approx: " + ConvertCurrency(currencyFrom, currencyTo, Convert.ToDouble(currencyAmount)) + $" {currencyTo}");
+                                    Console.WriteLine($"{currencyAmount} {currencyFrom} is approximately: " 
+                                    + ConvertCurrency(currencyFrom, currencyTo, 
+                                    Convert.ToDouble(currencyAmount)) + $" {currencyTo}");
                                 }
                             }
 
