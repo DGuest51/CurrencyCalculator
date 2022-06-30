@@ -598,7 +598,7 @@ namespace FinalProject
         }
         public class Program
         {
-            internal static string currencyFrom;
+            //internal static string currencyFrom;
 
             static void Main(string[] args)
             {
@@ -694,7 +694,6 @@ namespace FinalProject
                     Console.Write("Press 'q' and Enter to close the app, or press any other key and Enter to continue: ");
                     Console.WriteLine();
                     if (Console.ReadLine() == "q") endApp = true;
-
                 }
                 return;
             }
